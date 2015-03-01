@@ -1,0 +1,67 @@
+Enable rpmforge
+http://www.tecmint.com/enable-rpmforge-repository/
+
+wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+sudo rpm -Uvh rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
+
+
+NTFS
+http://wiki.centos.org/TipsAndTricks/NTFS
+yum install fuse fuse-ntfs-3g 
+
+List windows 7
+cp /boot/grub2/grub.cfg /boot/grub2/grub.cfg.bk
+grub2-mkconfig -o /boot/grub2/grub.cfg
+
+Install chrome:
+Follow steps here:
+http://www.tecmint.com/install-google-chrome-on-redhat-centos-fedora-linux/
+
+Was giving the issue:
+yum "Metadata file does not match checksum" problem
+
+Resolution:
+
+gedit /etc/yum.conf
+then add the line
+http_caching=packages
+
+install Mate:
+Enable epel http://linuxg.net/how-to-install-mate-1-8-on-centos-7-debian-jessie-and-debian-wheezy/
+Follow: http://www.server-world.info/en/note?os=CentOS_7&p=x&f=7
+
+sudo rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+sudo yum install epel-release-7-5.noarch.rpm
+sudo yum -y groups install "Server with GUI" 
+sudo yum --enablerepo=epel -y groups install "MATE Desktop" 
+
+To list windows
+sudo grub2-mkconfig -o /etc/grub2.cfg
+
+Open JDK
+yum install java-1.7.0-openjdk java-1.7.0-openjdk-devel
+
+http://wiki.centos.org/TipsAndTricks/MultimediaOnCentOS7
+
+WIFI
+http://elrepo.org/tiki/wl-kmod
+
+  1c) EL7:
+
+     # yum group install 'Development Tools'
+
+     # yum install redhat-lsb kernel-abi-whitelists
+
+     # yum install kernel-devel-$(un
+
+http://wiki.centos.org/HowTos/Laptops/Wireless/Broadcom
+
+wget http://www.broadcom.com/docs/linux_sta/hybrid-v35_64-nodebug-pcoem-6_30_223_248.tar.gz
+
+https://priteshugrankar.wordpress.com/2014/09/10/tweaking-centos-7-part-i/
+
+
+
+gnome shell extension:
+
+ yum install gnome-shell-browser-plugin
