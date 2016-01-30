@@ -1,6 +1,9 @@
 Enable rpmforge
 http://www.tecmint.com/enable-rpmforge-repository/
 
+Enable epel
+http://www.tecmint.com/how-to-enable-epel-repository-for-rhel-centos-6-5/
+
 wget http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
 sudo rpm -Uvh rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
 
