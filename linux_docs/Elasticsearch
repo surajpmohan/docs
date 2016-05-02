@@ -1,0 +1,5 @@
+When elastic search was not accessible using public IP:
+
+Steps:
+https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-network.html
+(configure the network option)
